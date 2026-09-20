@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>GAMMA.Program</StartupObject>
+    <StartupObject>GAMMA.Ej_Extra_GuerraChaco</StartupObject>
   </PropertyGroup>
 
 </Project>

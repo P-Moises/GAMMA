@@ -6,7 +6,7 @@ namespace GAMMA
 {
     public class Ej_Extra_GuerraChaco
     {
-        public void Run()
+        public static void Main(string[] args)
         {
             Console.WriteLine("Ej_Extra_GuerraChaco");
 
