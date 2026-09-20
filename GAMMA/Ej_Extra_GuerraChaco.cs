@@ -10,15 +10,13 @@ namespace GAMMA
         {
             Console.WriteLine("Ej_Extra_GuerraChaco");
 
-                // Variables iniciales de la escena
-                int aguaDisponible = 30; // Litros de agua en el fortín
+                int aguaDisponible = 30;
                 int dia = 1;
                 bool asedioTerminado = false;
 
                 Console.WriteLine("--- SIMULACIÓN: ASEDIO DE BOQUERÓN (GUERRA DEL CHACO) ---");
                 Console.WriteLine("Eres el comandante y debes racionar el agua de tus tropas.\n");
 
-                // Uso del ciclo do-while para simular los días que pasan
                 do
                 {
                     Console.WriteLine($"\n--- DÍA {dia} ---");
@@ -31,7 +29,6 @@ namespace GAMMA
 
                     string opcion = Console.ReadLine();
 
-                    // Uso de if, else if, y else para evaluar la decisión del usuario
                     if (opcion == "1")
                     {
                         aguaDisponible = aguaDisponible - 15;
@@ -52,7 +49,6 @@ namespace GAMMA
                         aguaDisponible = aguaDisponible - 5;
                     }
 
-                    // Uso de if y else para verificar las condiciones de fin del juego
                     if (aguaDisponible <= 0)
                     {
                         Console.WriteLine("\n¡El agua se ha agotado por completo! El fortín debe capitular.");
@@ -64,10 +60,9 @@ namespace GAMMA
                         asedioTerminado = true;
                     }
 
-                    // Incremento del ciclo while
                     dia++;
 
-                } while (asedioTerminado == false); // El bucle se repite mientras el asedio no haya terminado
+                } while (asedioTerminado == false);
 
                 Console.WriteLine("\nFin de la simulación histórica.");
 
